@@ -64,7 +64,7 @@ function listar2()
             },
         "bDestroy":true,
         "iDisplayLength": 5,
-        "order": [[0, "desc"]]
+            "order": [[0, "desc"]]
     }).DataTable();
 }
 

@@ -57,39 +57,27 @@ include "nav.php";
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <label>IdJob:</label>
                             <input type="hidden" name="id_top" id="id_top">
-                            <input type="file" class="form-control" name="idjob" id="idjob" >
-                            <input type="hidden" name="ia2" id="ia2">
-                            <img src="" width="150px" height="120px" id="im1">
+                            <input type="input" class="form-control" name="idjob" id="idjob" >
                           </div>
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <label>Trabajo:</label>
-                            <input type="file" class="form-control" name="trabajo" id="trabajo" >
-                            <input type="hidden" name="ia2" id="ia2">
-                            <img src="" width="150px" height="120px" id="im2">
+                            <input type="input" class="form-control" name="trabajo" id="trabajo" >
                           </div>
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <label>Descripcion:</label>
-                            <input type="file" class="form-control" name="descripcion" id="descripcion" >
-                            <input type="hidden" name="ia3" id="ia3">
-                            <img src="" width="150px" height="120px" id="im1">
+                            <input type="input" class="form-control" name="descripcion" id="descripcion" >
                           </div>
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <label>Inicio:</label>
-                            <input type="file" class="form-control" name="inicio" id="inicio" >
-                            <input type="hidden" name="ia4" id="ia4">
-                            <img src="" width="150px" height="120px" id="im4">
+                            <input type="input" class="form-control" name="inicio" id="inicio" >
                           </div>
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <label>Fin:</label>
-                            <input type="file" class="form-control" name="fin" id="fin" >
-                            <input type="hidden" name="ia5" id="ia5">
-                            <img src="" width="150px" height="120px" id="im5">
+                            <input type="input" class="form-control" name="fin" id="fin" >
                           </div>
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <label>Condicion:</label>
-                            <input type="file" class="form-control" name="condicion" id="condicion" >
-                            <input type="hidden" name="ia6" id="ia6">
-                            <img src="" width="150px" height="120px" id="im6">
+                            <input type="input" class="form-control" name="condicion" id="condicion" >
                           </div>
                           
                           
