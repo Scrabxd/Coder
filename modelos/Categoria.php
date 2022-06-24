@@ -23,12 +23,12 @@ Class Categoria
     public function desactivar ($idcategoria)
     {
         $sql = "UPDATE categoria SET condicion = '0' WHERE idcategoria = '$idcategoria'";
-        return ejecutarConsulta($sql)
+        return ejecutarConsulta($sql);
     }
     public function activar ($idcategoria)
     {
         $sql = "UPDATE categoria SET condicion = '1' WHERE idcategoria = '$idcategoria'";
-        return ejecutarConsulta($sql)
+        return ejecutarConsulta($sql);
     }
     public function mostrar($idcategoria)
     {
@@ -38,7 +38,7 @@ Class Categoria
     public function listar()
     {
         $sql = "SELECT * FROM categoria";
-        return ejecutarConsultaSimpleFila($sql);
+        return ejecutarConsulta($sql);
     }
 
 }

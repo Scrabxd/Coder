@@ -1,11 +1,11 @@
 <?php
-require_once "../modelos/Categoria.php"
+require_once "../modelos/Categoria.php";
 
 $categoria = new Categoria();
 
-$idcategoria = isset($_POST["idcategoria"])?:limpiarCadena($_POST["idcategoria"]):"";
-$nombre = isset($_POST["nombre"])?:limpiarCadena($_POST["nombre"]):"";
-$descripcion = isset($_POST["descripcion"])?:limpiarCadena($_POST["descripcion"]):"";
+$idcategoria = isset($_POST["idcategoria"])? limpiarCadena($_POST["idcategoria"]):"";
+$nombre = isset($_POST["nombre"])? limpiarCadena($_POST["nombre"]):"";
+$descripcion = isset($_POST["descripcion"])? limpiarCadena($_POST["descripcion"]):"";
 
 switch ($_GET["op"]){
     case 'guardaryeditar';
@@ -19,38 +19,39 @@ switch ($_GET["op"]){
         }
     break;
     
-    case 'desactivar';
+    case 'desactivar':
         $rspta = $categoria -> desactivar($idcategoria);
-        echo $rspta ? "Categoria desactivada" : "Categoria no se puede desactivar"
+        echo $rspta ? "Categoria desactivada" : "Categoria no se puede desactivar";
     break;
 
-    case 'activar';
+    case 'activar':
         $rspta = $categoria -> activar($idcategoria);
-        echo $rspta ? "Categoria activada" : "Categoria no se puede activar"
+        echo $rspta ? "Categoria activada" : "Categoria no se puede activar";
     break;
 
-    case 'mostrar';
+    case 'mostrar':
         $rspta = $categoria -> mostrar($idcategoria);
         echo json_encode($rspta);
     break;
 
-    case 'listar';
+    case 'listar':
         $rspta = $categoria -> listar();
         $data = Array();
 
-        while ($reg=$rspta-> fetch_object()){
-            $data[] = Array(
+        while ($reg=$rspta -> fetch_object()){
+            
+            $data[] = array(
                 "0" =>$reg->idcategoria,
                 "1" =>$reg->nombre,
                 "2" =>$reg->descripcion,
                 "3" =>$reg->condicion
             );
         }
-        $results = Array(
+        $results = array(
             "sEcho" => 1,
-            "iTotalRecords"=> count($data),
-            "iTotalDisplayRecords" =>count($data),
-            "aaData"=>$data);
+            "iTotalRecords" => count($data),
+            "iTotalDisplayRecords" => count($data),
+            "aaData" => $data);
         echo json_encode($results);
         
     break;
