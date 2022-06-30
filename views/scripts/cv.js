@@ -66,7 +66,24 @@ function listar2()
         "iDisplayLength": 5,
             "order": [[0, "desc"]]
     }).DataTable();
+
+}
+function mostrar2(idjob){
+    $.post("../ajax/cv.php?op=mostrar2",{idjob : idjob}, function(data, status)
+	{
+        data = JSON.parse(data);
+        mostrarform2(true);
+		
+
+        $("#trabajo").val(data.trabajo);
+        $("#descripcion").val(data.descripcion);
+        $("#inicio").val(data.inicio);
+        $("#fin").val(data.fin);
+        $("#idjob").val(data.idjob); 
+
+})
 }
 
 
-init()
+
+init();
