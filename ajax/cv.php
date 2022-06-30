@@ -41,7 +41,7 @@ switch ($_GET["op"]){
         while ($reg=$rspta -> fetch_object()){
             
             $data[] = array(
-                "0" =>$reg->idjob,
+                "0" => '<button class="btn btn-warning" onclick="mostrar2('.$reg->idjob.')"><i class="fa fa-edit"></i></button>',                
                 "1" =>$reg->trabajo,
                 "2" =>$reg->descripcion,
                 "3" =>$reg->inicio,
