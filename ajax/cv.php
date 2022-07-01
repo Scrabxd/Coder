@@ -36,7 +36,7 @@ switch ($_GET["op"]){
 
     case 'listar2':
         $rspta = $cv -> listar2();
-        $data = Array();
+        $data = Array();    
 
         while ($reg=$rspta -> fetch_object()){
             
@@ -46,7 +46,6 @@ switch ($_GET["op"]){
                 "2" =>$reg->descripcion,
                 "3" =>$reg->inicio,
                 "4" =>$reg->fin,
-                "5" =>$reg->condicion
 
             );
         }
