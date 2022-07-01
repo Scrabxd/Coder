@@ -43,7 +43,7 @@ include "nav.php";
                             <th>descripcion</th>
                             <th>inicio</th>
                             <th>fin</th>
-                            <th>condicion</th>
+
                           </thead>
                           <tbody>                            
                           </tbody>
