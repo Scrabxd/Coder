@@ -7,3 +7,6 @@
       <script src="../public/js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="../public/js/custom.js"></script>
       <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+      <!-- Login js-->
+      <script src="../public/js/login.js"></script>
